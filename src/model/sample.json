@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Sample 1",
+        "url": "#",
+        "properties": [
+            {
+                "name": "prop1",
+                "type": "choice",
+                "value": "foo"
+            },
+            {
+                "name": "prop1b",
+                "type": "choice",
+                "value": "foo2"
+            }
+        ]
+    },
+    {
+        "title": "Sample 2",
+        "url": "#",
+        "property": {
+            "name": "prop2",
+            "type": "choice",
+            "value": "bar"
+        }
+    }
+]
