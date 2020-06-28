@@ -1,8 +1,11 @@
 import * as React from 'react';
-import { IExceptionProps } from './IExceptionProps';
 declare function escape(s: string): string;
 
-export default class Exception extends React.Component<IExceptionProps, {}> {
+export interface IExceptionProps {
+  message: string;
+} 
+
+export class Exception extends React.Component<IExceptionProps, {}> {
   public render(): React.ReactElement<IExceptionProps> {
     return (
       <div className={ 'testWebApi' }>

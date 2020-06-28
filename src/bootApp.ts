@@ -1,3 +1,4 @@
+import ComponentManager from './components/ComponentManager';
 
 export class bootstrapper {
 
@@ -7,7 +8,10 @@ export class bootstrapper {
 
     if (workspace) {
 
-      workspace.innerText = "Hello, world";
+      ComponentManager.render(workspace, "Hello, world");
+
+      // workspace.innerText = "Hello, world";
+
       // const service = ReManagerServiceFactory.getService(false);
       // service.getReProperties(tenant, clientId, resourceId, endpointUrl)
       //   .then ((data: IReProperty[]) => {
